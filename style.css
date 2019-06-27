@@ -1,0 +1,22 @@
+nav {
+  background: #333;
+  color: white;
+  padding: ;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 25px;
+}
+
+nav span.title {
+  font-family: 'Times New Roman', Times, serif;
+  display: block;
+  text-align: center;
+  font-size: 2em;
+}
+
+span.version {
+  font-size: 12px;
+  display: block;
+  position: relative;
+  text-align: center;
+}
