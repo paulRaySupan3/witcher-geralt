@@ -2,35 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Our Beloved Witcher</title>
+  <title>The White Wolf</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+   <!-- Online Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 </head>
 
 <body>
 <!-- Title Page -->
-    <nav>
-        <span class="title">
-            Geralt of Rivia
-        </span>
-        <span class="version">
-          <h2>
-            A Witcher from the School of the Wolf
-          </h2>
-        </span>
-        </nav>
+
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <a class="navbar-brand" href=""><h1>Geralt of Rivia</h1></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#itemCollapse">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="itemCollapse">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+              <h5> | A Badass Witcher from the School of the Wolf</h5>
+              </li>
+          </ul>
+
+          <form class="form-inline my-2 my-md-1">
+            <button type="button" class="btn btn-outline-success my-2"><a href="credits.html" target="_blank" title="See Credits Page">Credits Page</button></a>
+          </form>
+      </div>
+  </nav>
 <!-- End NavBar -->
 
   <div class="wrapper">
   <header>
-    <img src="photos/profilePic.jpg">
+    <img src="photos/profilePic.jpg" alt="Geralt" class="centerPhoto">
 
   </header>
     <div class="content">
       <h2>About Geralt of Rivia</h2>
       <hr>
-      &#10077; &#10078;
+      <div class="quote">
+        &#10077; Evil is evil. Lesser, greater, middling... makes no difference. The degree is arbitrary. The definitions blurred. If I'm to choose between one evil and another, I’d rather not choose at all.	
+        <div class="person">
+        ~ Geralt of Rivia &#10078;
+      </div>
+      </div>
+
+      <br><br>
       <p>
         Geralt of Rivia is the main protagonist of the <a href="https://thewitcher.com/en/witcher3/" target="_blank" title="The Witcher by CD Projeckt Red">Witcher franchise</a>. He is a witcher, a magically-enhanced mutant who slays monsters for a price, and the adopted father of <a href="https://witcher.fandom.com/wiki/Ciri" target="_blank" title="Who is Ciri?">Ciri</a>. Despite the fact that witchers have a reputation for being heartless and the mutations are meant to kill emotions, Geralt still has a conscience and generally helps others because it's the right thing rather than to get paid, though he rarely goes out of his way to admit this.
       </p>
@@ -59,8 +79,48 @@
         <li>He has a wide knowledge about <a href="https://witcher.fandom.com/wiki/The_Witcher_3:_Wild_Hunt_-_Guide_to_Alchemy" target="_blank" title="Alchemy">Alchemy</a> and Alchemical Formulas</li>
         <li>He has an excellent knowledge about <a href="https://witcher.fandom.com/wiki/Sign" target="_blank" title="Witcher Signs">Combat Signs</a></li>
       </ul>
+      
+      <!-- Slideshow -->
       <img class="big-image" src="">
       <p class="caption">this is Geralt in action</p>
+
+    <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="/photos/geralt in action.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="/photos/geralt in action_2.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="/photos/geralt in action_3.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+      <!-- End Slideshow -->
+
       <h2>Geralt's Friends</h2>
       <ul>
         <li><a href=""></a>1</li>
@@ -79,5 +139,44 @@
 
     </div>
   </div>
+
+      <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+      // Slideshow JS
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1} 
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none"; 
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block"; 
+        dots[slideIndex-1].className += " active";
+      }
+    </script>
+    
 </body>
 </html>
