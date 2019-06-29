@@ -29,7 +29,7 @@
           </ul>
 
           <form class="form-inline my-2 my-md-1">
-            <button type="button" class="btn btn-outline-success my-2"><a href="credits.html" target="_blank" title="See Credits Page">Credits Page</button></a>
+            <button type="button" class="btn btn-outline-success my-2"><a href="" target="_blank" title="Credits Page is still Under Construction">Credits Page</button></a>
           </form>
       </div>
   </nav>
@@ -81,8 +81,7 @@
       </ul>
       
       <!-- Slideshow -->
-      <img class="big-image" src="">
-      <p class="caption">this is Geralt in action</p>
+       <p class="caption">this is Geralt in action</p>
 
     <!-- Slideshow container -->
         <div class="slideshow-container">
@@ -106,33 +105,25 @@
             <div class="text">Caption Three</div>
           </div>
 
-          <!-- Next and previous buttons -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
-
       <!-- End Slideshow -->
-
-      <h2>Geralt's Friends</h2>
-      <ul>
-        <li><a href=""></a>1</li>
-        <li><a href=""></a>2</li>
-        <li><a href=""></a>3</li>
-      </ul>
+     
+      
+      <div>
+        <br><br>
+        <h2>Geralt's Friends</h2>
+        <ul>
+          <li><a href=""></a>Dandelion the Bard</li>
+          <li><a href=""></a>Triss Merigold</li>
+          <li><a href=""></a>Yennefer of Vengerberg</li>
+        </ul>
+      </div>
+    
       <div>
         <footer>
           <ul>
             <li>Made by <a href="https://www.skillshare.com/profile/Paul-Ray-Supan/5743900" target="_blank" title="Visit Paul's Website">Paul Ray</a> (boiKamuti) &#x269D;&#x263A;&#x269D; &#9996;&#9996;</li>
             Made during a <a href="www.skillshare.com" target="_blank" title="Visit Skillshare Website">skillshare</a> <a href="https://www.skillshare.com/classes/Hand-Coding-Your-First-Website-HTML-and-CSS-Basics/1483893097?via=logged-in-home-your-classes" target="_blank" title="See Rich Armstrong's Class!">class</a>
-            <h4>I do not own any of the information mentioned above, see <a href="credits.html" target="_blank" title="See Credits for my references :)">Credits</a> for my references.</h4>
+            <h4>I do not own any of the information mentioned above, see <a href=" " target=" " title="Under Construction :)">Credits</a> for my references.</h4>
           </ul>
         </footer>
       </div>
@@ -147,36 +138,24 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script>
-      // Slideshow JS
-    var slideIndex = 1;
-    showSlides(slideIndex);
+ 
+      var slideIndex = 0;
+      showSlides();
 
-      // Next/previous controls
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
+      function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
       }
-
-      // Thumbnail image controls
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1} 
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none"; 
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block"; 
-        dots[slideIndex-1].className += " active";
-      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1} 
+      slides[slideIndex-1].style.display = "block"; 
+      setTimeout(showSlides, 2500); // Change image every 2 and a half seconds
+    }
     </script>
+
+
     
 </body>
 </html>
